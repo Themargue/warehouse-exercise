@@ -30,6 +30,9 @@ Tons!
 This is a coding exercise to implement part of the business logic. A real-life scenario would have a full-round architecture around this REST API.
 Let's focus on the ones of the API - I'll suggest libraries, based on how I would implement them with my knowledge today.
 
+#### Errors and exceptions handling
+First thing to fix is to agree on a good practice for error-handling, avoid any NullPointerException, add a Logger and define a default error message structure.
+
 #### Testing
 - Unit testing service and inventory methods with Java JUnit 5 library.
 - Integration testing JSON payload with Mockito library.
