@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Controller
-@RequestMapping("/warehouse")
+@RequestMapping("/products")
 public class WarehouseController {
 
     @Autowired
