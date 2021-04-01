@@ -15,7 +15,7 @@ The articles are indexed in the company **Inventory**, with no association to a 
 
 ## REST API
 I chose to build a REST API to be close to a real business scenario.
-The API is built with Java 11, Spring Boot and Spring Web.
+The API is built with Java 11, Spring Boot and Spring Web. Spring boot is a module that provides rapid application development feature to the spring framework including auto-configuration, standalone-code, and production-ready code.
 
 The API exposes 2 endpoints, covering the 2 requirements listed above:
 
