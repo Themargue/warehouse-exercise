@@ -1,4 +1,4 @@
-package com.assignment.warehouse;
+package com.assignment.warehouse.products;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

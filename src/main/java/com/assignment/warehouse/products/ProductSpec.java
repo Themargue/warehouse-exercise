@@ -1,4 +1,4 @@
-package com.assignment.warehouse;
+package com.assignment.warehouse.products;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
@@ -40,7 +40,7 @@ public class ProductSpec {
         this.id = id;
     }
 
-    static class Article {
+    public static class Article {
         @JsonProperty("art_id")
         private Integer id;
         @JsonProperty("amount_of")
