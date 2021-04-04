@@ -1,30 +1,40 @@
 package com.assignment.warehouse.products;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
 
+import javax.persistence.*;
+
+@Entity
 public class Product {
-    @JsonProperty
-    private final String name;
-    @JsonProperty
-    private final Integer numberAvailable;
-    @JsonProperty
-    private final Integer id;
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private Integer productId;
+    private String name;
+    @OneToMany(mappedBy="product")
+    private List<Spec> spec;
 
-    public Product(String name, Integer numberAvailable, Integer id) {
-        this.name = name;
-        this.numberAvailable = numberAvailable;
-        this.id = id;
+    public Integer getProductId() {
+        return productId;
+    }
+
+    public void setProductId(Integer productId) {
+        this.productId = productId;
     }
 
     public String getName() {
         return name;
     }
 
-    public Integer getNumberAvailable() {
-        return numberAvailable;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Integer getId() {
-        return id;
+    public List<Spec> getSpec() {
+        return spec;
+    }
+
+    public void setSpec(List<Spec> spec) {
+        this.spec = spec;
     }
 }
