@@ -1,8 +1,8 @@
-package com.assignment.warehouse;
+package com.assignment.warehouse.products;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Product {
+public class ProductResponse {
     @JsonProperty
     private final String name;
     @JsonProperty
@@ -10,7 +10,7 @@ public class Product {
     @JsonProperty
     private final Integer id;
 
-    public Product(String name, Integer numberAvailable, Integer id) {
+    public ProductResponse(String name, Integer numberAvailable, Integer id) {
         this.name = name;
         this.numberAvailable = numberAvailable;
         this.id = id;
