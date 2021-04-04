@@ -23,6 +23,8 @@ The API exposes 1 endpoint, covering the 1 out of 2 requirements listed above:
 
 The API connects to an H2 database which handles Inventory, Product and Product Specs tables. Instead of a volatile in-memory database, the database persists data on a file in the `resources/data` folder, not to lose data with each startup.
 
+![](src/main/resources/static/db.png)
+
 ## Improvement points
 Tons!
 
